@@ -20,13 +20,55 @@
 
             body{
                 background: black;
+                padding: 0;
+                margin: 0;
             }
             
             header{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                overflow: hidden;
+                height: 280px;
+
                 font-family: "Fonky", "Arial";
                 color: white;
+            }
+            
+            header h1 {
                 font-size: 5em;
-                text-align: center;
+                z-index: 1;
+                margin: 0;
+
+                line-height: 0.7em;
+            }    
+
+            header h2 {
+                margin: 0;
+                letter-spacing: 0.1em;
+                transform: translateX(0.1em);
+                text-transform: uppercase;
+            }    
+
+            header video{
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -1;
+            }
+
+            /* 1280px is video width */
+            @media (max-width: 1280px) {
+                header video{
+                    height: 100%;
+                }
+            }
+            @media (min-width: 1280px) {
+                header video{
+                    width: 100%;
+                }
             }
 
             .mosaic a{
@@ -60,15 +102,15 @@
             }
 
             .mosaic a.montagne{
-                background-image: url('images/IMG_8442.jpg');
+                background-image: url('images/raw/IMG_8442.jpg');
             }
 
             .mosaic a.portraits{
-                background-image: url('images/P1004345.jpg')
+                background-image: url('images/raw/P1004345.jpg')
             }
 
             .mosaic a.islande{
-                background-image: url('images/IMG_6244.jpg')
+                background-image: url('images/raw/IMG_6244.jpg')
             }
 
             .mosaic a::before{
@@ -83,10 +125,17 @@
             .mosaic a:hover::before{
                 opacity: 0.5;
             }
+
+
+            
         </style>
     </head>
     <body>
-        <header>TIM BSN</header>
+        <header>
+            <h1>TIM BSN</h1>
+            <h2>Voyages et rêveries</h2>
+            <video src="video/header/header.webm" autoplay loop>
+        </header>
         <main>
             <nav class="mosaic">
                 <a class="montagne" href="montagne">
