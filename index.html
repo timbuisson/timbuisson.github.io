@@ -11,8 +11,68 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <script crossorigin="anonymous" src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+        <style>
+            @font-face {
+                font-family: "Fonky"; /* cette blague est nulle -_-# */
+                src: url("fonts/brandon_text_regular.otf");
+            }
+
+            body{
+                background: black;
+            }
+            
+            header{
+                font-family: "Fonky", "Arial";
+                color: white;
+                font-size: 5em;
+                text-align: center;
+            }
+            
+            .mosaic a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 180px;
+                width: 320px;
+
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+
+                color: hsla(0, 0%, 100%, 1);
+                font-family: "Fonky", "Arial";
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 2em;
+            }
+
+            .mosaic a.montagne{
+                background-image: url('images/IMG_8442.jpg');
+            }
+            .mosaic a.portraits{
+                background-image: url('images/P1004345.jpg')
+            }
+            .mosaic a.islande{
+                background-image: url('images/IMG_6244.jpg')
+            }
+        </style>
     </head>
     <body>
-        bla bla
+        <header>TIM BSN</header>
+        <main>
+            <nav class="mosaic">
+                <a class="montagne" href="montagne">
+                    <span>Montagne</span>
+                </a>
+                <a class="portraits" href="portraits">
+                    <span>Portraits</span>
+                </a>
+                <a class="islande" href="islande">
+                    <span>Islande</span>
+                </a>
+            </nav>
+        </main>
     </body>
 </html>
