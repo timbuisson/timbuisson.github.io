@@ -28,7 +28,6 @@
                 font-size: 5em;
                 text-align: center;
             }
-            
 
             .mosaic a{
                 position: relative;
@@ -48,6 +47,16 @@
                 text-transform: uppercase;
                 text-decoration: none;
                 font-size: 2em;
+
+                transition: color 0.2s;
+            }
+
+            .mosaic a span{
+                z-index: 1;
+            }
+
+            .mosaic a:hover span{
+                color: white;
             }
 
             .mosaic a.montagne{
