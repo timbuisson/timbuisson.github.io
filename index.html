@@ -5,7 +5,7 @@
         <meta name="referrer" value="same-origin">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
-        <title> BLOU BLOU</title>
+        <title>TIM BSN</title>
         
         <meta name="description" content=" ">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,6 +71,10 @@
                 }
             }
 
+            .mosaic{
+                display: flex;
+                flex-wrap: wrap;
+            }
             .mosaic a{
                 position: relative;
                 display: flex;
@@ -113,6 +117,34 @@
                 background-image: url('images/mosaic/IMG_6244.jpg')
             }
 
+            .mosaic a.etoiles{
+                background-image: url('images/mosaic/IMG_5012.jpg')
+            }
+
+            .mosaic a.rome{
+                background-image: url('images/mosaic/IMG_4279.jpg')
+            }
+
+            .mosaic a.crete{
+                background-image: url('images/mosaic/IMG_4643.jpg')
+            }
+
+            .mosaic a.venise{
+                background-image: url('images/mosaic/IMG_0595.jpg')
+            }
+
+            .mosaic a.fuites{
+                background-image: url('images/mosaic/IMG_0715.jpg')
+            }
+
+            .mosaic a.instantanes{
+                background-image: url('images/mosaic/IMG_9882.jpg')
+            }
+
+            .mosaic a.instagram{
+                background-image: url('images/mosaic/IMG_7763.jpg')
+            }
+
             .mosaic a::before{
                 content: ' ';
                 position: absolute;
@@ -126,7 +158,16 @@
                 opacity: 0.5;
             }
 
+            .mosaic a img{
+                width: 50%;
+                z-index: 1;
+                opacity: 0;
+            }
 
+            .mosaic a:hover img{
+            opacity: 1;
+            opacity: 0.5s;
+            }
             
         </style>
     </head>
@@ -147,7 +188,31 @@
                 <a class="islande" href="islande">
                     <span>Islande</span>
                 </a>
+                <a class="etoiles" href="etoiles">
+                    <span>Les Étoiles</span>
+                </a>
+                <a class="rome" href="rome">
+                    <span>Rome</span>
+                </a>
+                <a class="crete" href="crete">
+                    <span>La Crète</span>
+                </a>
+                <a class="venise" href="venise">
+                    <span>Venise</span>
+                </a>
+                <a class="fuites" href="fuites">
+                    <span>Points de Fuites</span>
+                </a>
+                <a class="instantanes" href="instantanes">
+                    <span>Instantanés</span>
+                </a>
+                <a class="instagram" href="instagram">
+                    <img src="images/mosaic/instagram-logo-796x404.png">
+                </a>
             </nav>
         </main>
+        <footer>
+
+        </footer>
     </body>
 </html>
