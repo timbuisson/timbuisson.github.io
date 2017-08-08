@@ -29,7 +29,9 @@
                 text-align: center;
             }
             
+
             .mosaic a{
+                position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -41,7 +43,7 @@
                 background-position: center center;
                 background-size: cover;
 
-                color: hsla(0, 0%, 100%, 1);
+                color: hsla(0, 0%, 100%, 0);
                 font-family: "Fonky", "Arial";
                 text-transform: uppercase;
                 text-decoration: none;
@@ -51,11 +53,26 @@
             .mosaic a.montagne{
                 background-image: url('images/IMG_8442.jpg');
             }
+
             .mosaic a.portraits{
                 background-image: url('images/P1004345.jpg')
             }
+
             .mosaic a.islande{
                 background-image: url('images/IMG_6244.jpg')
+            }
+
+            .mosaic a::before{
+                content: ' ';
+                position: absolute;
+                background: black;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                transition: opacity 0.2s;
+            }
+            .mosaic a:hover::before{
+                opacity: 0.5;
             }
         </style>
     </head>
