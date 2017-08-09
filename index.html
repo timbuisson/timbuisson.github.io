@@ -15,7 +15,7 @@
         <style>
             @font-face {
                 font-family: "Fonky"; /* cette blague est nulle -_-# */
-                src: url("fonts/brandon_text_regular.otf");
+                src: url("/fonts/brandon_text_regular.otf");
             }
 
             body{
@@ -90,7 +90,7 @@
                 background-position: center center;
                 background-size: cover;
 
-                color: hsla(0, 0%, 100%, 0.3);
+                color: hsla(0, 0%, 100%, 0.5);
                 font-family: "Fonky", "Arial";
                 text-transform: uppercase;
                 text-decoration: none;
@@ -100,7 +100,7 @@
             }
             .mosaic a:hover{
                 transition: transform 0.5s;
-                transform: scale(1.35);
+                transform: scale(1.1);
                 z-index: 1;
 
                 color: white;
@@ -154,7 +154,7 @@
                 background-image: url('images/mosaic/video.gif')
             }
 
-            .mosaic a.blabla{
+            .mosaic a.paroles{
                 background-image: url('images/mosaic/IMG_8368.jpg')
             }
 
@@ -197,6 +197,10 @@
             footer a{
                 text-decoration: none;
                 color: white;
+            }
+
+            footer a img{
+                width: 50px;
             }
 
         </style>
@@ -242,8 +246,8 @@
                 <a class="video" href="video">
                     <span>Vidéos</span>
                 </a>
-                <a class="blabla" href="blabla">
-                    <span>Bla Bla</span>
+                <a class="paroles" href="paroles">
+                    <span>Paroles</span>
                 </a>
             </nav>
         </main>
@@ -251,11 +255,11 @@
             <a class="about" href="about">
                 <span>À Propos</span>
             </a>
-            <a class="followme" href="twitter">
-                <span>Suis-moi</span>
+            <a class="followme" href="https://www.twitter.com/timbsn">
+                <img src="images/social/twitter_logo.png">
             </a>
-             <a class="contact" href="contact">
-                <span>Contacte-moi</span>
+             <a class="contact" href="mailto:timothee.buisson@gmail.com">
+                <img src="images/social/mail_site.png">
             </a>
         </footer>
     </body>
